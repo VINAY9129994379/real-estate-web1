@@ -1,0 +1,124 @@
+/* Container for the property item */
+.property-item-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 80px;
+}
+
+.property-item-contain:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Property image styling */
+.property-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Title and text styling */
+.property-item-contain h4 {
+  font-size: 1.4rem;
+  color: #d5c4c4;
+  margin-bottom: 10px;
+  margin-left: -340px;
+  margin-top: -50px;
+  background-color: #cd2020;
+  border-radius: 10px;
+}
+
+.property-item-contain p {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Details section for beds, baths, levels, and sqft */
+.property-item-details {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #eaeaea;
+}
+
+.property-item-details p {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+.property-item-details p span {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+/* Icons styling */
+.property-item-details svg {
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+/* Hover effect for details */
+.property-item-details p:hover span {
+  color: #007bff;
+}
+
+/* Responsive design */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .property-item-contain {
+    max-width: 100%;
+    padding: 15px;
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .property-item-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .property-item-details p {
+    margin-bottom: 10px;
+  }
+
+  .property-item-contain h4 {
+    margin-left: 0; /* Adjust title margin */
+    font-size: 1.2rem; /* Smaller font size */
+    text-align: center; /* Center align title */
+    margin-top: 10px; /* Adjust margin */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .property-item-contain {
+    padding: 10px;
+  }
+
+  .property-item-contain h4 {
+    font-size: 1rem; /* Further smaller font size */
+    margin-top: 5px;
+    padding: 5px; /* Adjust padding for better readability */
+  }
+
+  .property-item-details p {
+    font-size: 0.9rem; /* Smaller font size for details */
+  }
+
+  .property-item-details svg {
+    font-size: 1rem; /* Adjust icon size */
+  }
+}

@@ -1,0 +1,162 @@
+/* General container styling */
+.property {
+  padding: 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.property p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.property h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Houses container: grid layout */
+.property-houses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: stretch;
+}
+
+/* Individual property item (from the Item component) */
+.property-item-contain {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.3s ease;
+}
+
+.property-item-contain:hover {
+  transform: scale(1.05);
+}
+
+/* Property image */
+.property-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Property details */
+.property-item-details {
+  text-align: left;
+  font-size: 14px;
+  color: #777;
+  margin-top: 15px;
+}
+
+.property-item-details p {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.property-item-details p span {
+  margin-left: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+.property h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.property h5 {
+  font-size: 18px;
+  color: #2d9c45;
+  font-weight: bold;
+}
+
+/* Property address */
+.property p {
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.btn {
+  background-color: #2d9c45; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding for size */
+  border: none; /* Remove borders */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Text size */
+  font-weight: 600; /* Bold text */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  margin-top: 20px; /* Add space above the button */
+}
+
+/* Hover effect */
+.btn:hover {
+  background-color: #237a34; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active state for click effect */
+.btn:active {
+  background-color: #1e6230; /* Even darker green on click */
+  transform: translateY(0); /* Reset lift effect */
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2); /* Inner shadow to simulate button press */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .property {
+      padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .property h2 {
+      font-size: 28px; /* Reduce heading size */
+  }
+
+  .property p {
+      font-size: 16px; /* Slightly smaller paragraph text */
+  }
+
+  .property-houses {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust grid for smaller screens */
+  }
+
+  .property-item-contain {
+      max-width: 90%; /* Make items full width */
+  }
+
+  .btn {
+      font-size: 14px; /* Adjust button text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .property h2 {
+      font-size: 24px; /* Further reduce heading size */
+  }
+
+  .property p {
+      font-size: 14px; /* Further reduce paragraph text */
+  }
+
+  .btn {
+      padding: 8px 16px; /* Adjust button size for smaller screens */
+  }
+
+  .property-item-details {
+      font-size: 12px; /* Smaller text for details */
+  }
+}

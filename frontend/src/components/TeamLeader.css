@@ -1,0 +1,152 @@
+/* TeamLeader.css */
+
+.team-leader {
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.team-leader-contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.leader-profile-detail-1-left,
+.leader-profile-detail-2-center,
+.leader-profile-detail-3-right,
+.leader-profile-detail-4-left,
+.leader-profile-detail-5-center,
+.leader-profile-detail-6-right {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.leader-profile-detail-1-left img,
+.leader-profile-detail-2-center img,
+.leader-profile-detail-3-right img,
+.leader-profile-detail-4-left img,
+.leader-profile-detail-5-center img,
+.leader-profile-detail-6-right img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.leader-profile-detail-1-left h1,
+.leader-profile-detail-2-center h1,
+.leader-profile-detail-3-right h1,
+.leader-profile-detail-4-left h1,
+.leader-profile-detail-5-center h1,
+.leader-profile-detail-6-right h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.leader-profile-detail-1-left p,
+.leader-profile-detail-2-center p,
+.leader-profile-detail-3-right p,
+.leader-profile-detail-4-left p,
+.leader-profile-detail-5-center p,
+.leader-profile-detail-6-right p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.leader-contact h2 {
+  font-size: 18px;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.leader-contact p {
+  font-size: 16px;
+  color: #555;
+}
+
+.profile-social-id {
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.profile-social-id:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .leader-profile-detail-1-left,
+  .leader-profile-detail-2-center,
+  .leader-profile-detail-3-right,
+  .leader-profile-detail-4-left,
+  .leader-profile-detail-5-center,
+  .leader-profile-detail-6-right {
+      width: 45%; /* Adjust width for medium-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .leader-profile-detail-1-left,
+  .leader-profile-detail-2-center,
+  .leader-profile-detail-3-right,
+  .leader-profile-detail-4-left,
+  .leader-profile-detail-5-center,
+  .leader-profile-detail-6-right {
+      width: 100%; /* Stack profiles on small screens */
+  }
+
+  .leader-profile-detail-1-left h1,
+  .leader-profile-detail-2-center h1,
+  .leader-profile-detail-3-right h1,
+  .leader-profile-detail-4-left h1,
+  .leader-profile-detail-5-center h1,
+  .leader-profile-detail-6-right h1 {
+      font-size: 20px; /* Adjust heading size for small screens */
+  }
+
+  .leader-profile-detail-1-left p,
+  .leader-profile-detail-2-center p,
+  .leader-profile-detail-3-right p,
+  .leader-profile-detail-4-left p,
+  .leader-profile-detail-5-center p,
+  .leader-profile-detail-6-right p {
+      font-size: 14px; /* Adjust paragraph size for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .leader-profile-detail-1-left,
+  .leader-profile-detail-2-center,
+  .leader-profile-detail-3-right,
+  .leader-profile-detail-4-left,
+  .leader-profile-detail-5-center,
+  .leader-profile-detail-6-right {
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .leader-profile-detail-1-left h1,
+  .leader-profile-detail-2-center h1,
+  .leader-profile-detail-3-right h1,
+  .leader-profile-detail-4-left h1,
+  .leader-profile-detail-5-center h1,
+  .leader-profile-detail-6-right h1 {
+      font-size: 18px; /* Further adjust heading size */
+  }
+
+  .leader-profile-detail-1-left p,
+  .leader-profile-detail-2-center p,
+  .leader-profile-detail-3-right p,
+  .leader-profile-detail-4-left p,
+  .leader-profile-detail-5-center p,
+  .leader-profile-detail-6-right p {
+      font-size: 12px; /* Further adjust paragraph size */
+  }
+}

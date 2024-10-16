@@ -1,0 +1,139 @@
+/* General header styles */
+.header {
+  background-color: #d8cdcd;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styles */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Search form styles */
+.middle-form input[type="search"] {
+  padding: 8px;
+  width: 250px;
+  border-radius: 4px;
+  border: 1px solid #989595;
+  font-size: 14px;
+  outline: none;
+}
+
+.middle-form input[type="search"]:focus {
+  border-color: #007BFF;
+  background-color: #bfddf7;
+}
+
+/* Navigation list styles */
+.header-left {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header-left a {
+  text-decoration: none;
+}
+
+.header-nav-left {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-nav-left:hover {
+  color: #007BFF;
+}
+
+/* Dropdown styles */
+.property-nav {
+  position: relative;
+}
+
+.property-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+  width: 150px;
+}
+
+.property-dropdown-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.property-dropdown-section option {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.property-dropdown-section option:hover {
+  background-color: #aba5a5;
+}
+
+/* Show the dropdown on hover */
+.property-nav:hover .property-dropdown {
+  display: block;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .middle-form input[type="search"] {
+    width: 100%; /* Full width for input */
+    margin-top: 10px; /* Space above the input */
+  }
+
+  .header-nav-left {
+    margin-left: 0; /* Reset left margin */
+    margin-top: 10px; /* Space above each nav item */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .property-dropdown {
+    width: 120px; /* Smaller dropdown width for tablets */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px; /* Smaller logo size */
+  }
+
+  .header-nav-left {
+    font-size: 12px; /* Smaller font size for navigation */
+  }
+
+  .middle-form input[type="search"] {
+    padding: 6px; /* Smaller padding for input */
+  }
+
+  .property-dropdown {
+    width: 100px; /* Smaller dropdown width */
+  }
+}

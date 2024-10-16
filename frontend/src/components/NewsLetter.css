@@ -1,0 +1,97 @@
+/* NewsLetter.css */
+.news-letter {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+.news-letter-left-contain,
+.news-letter-right-contain {
+  width: 48%;
+}
+
+.news-letter-left,
+.news-letter-right {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-letter-left p,
+.news-letter-right p {
+  color: #888;
+  font-size: 14px;
+}
+
+.news-letter-left h1,
+.news-letter-right h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.news-letter-left img,
+.news-letter-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.news-letter-left p:last-of-type,
+.news-letter-right p:last-of-type {
+  margin-top: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.read-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .news-letter {
+      flex-direction: column;
+  }
+
+  .news-letter-left-contain,
+  .news-letter-right-contain {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-letter {
+      padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .news-letter-left h1,
+  .news-letter-right h1 {
+      font-size: 20px; /* Reduce font size of headings */
+  }
+
+  .news-letter-left p,
+  .news-letter-right p {
+      font-size: 12px; /* Reduce font size of paragraphs */
+  }
+
+  .read-btn {
+      padding: 8px 16px; /* Adjust button size */
+      font-size: 14px; /* Smaller font size for button text */
+  }
+}

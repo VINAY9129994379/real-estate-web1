@@ -1,0 +1,84 @@
+/* ContactDetail.css */
+
+.Contact-detail {
+  display: flex;                 /* Use flexbox for layout */
+  justify-content: center;       /* Center content horizontally */
+  align-items: center;           /* Center content vertically */
+  width: 100%;                   /* Full width */
+  height: 30vh;                  /* Full height of the viewport */
+  background-color: #f0f0f0;     /* Optional: Background color for visibility */
+  padding: 20px;                 /* Optional: Padding around the container */
+  box-sizing: border-box;        /* Include padding in the width and height */
+}
+
+.contact-detail-contain {
+  display: flex;                 /* Use flexbox for child layout */
+  justify-content: space-around; /* Space items evenly */
+  width: 100%;                   /* Full width of the parent */
+}
+
+.contact-detail-left,
+.contact-detail-center,
+.contact-detail-right {
+  flex: 1;                       /* Equal width for all columns */
+  text-align: center;            /* Center text */
+  padding: 10px;                 /* Optional: Padding for spacing */
+}
+
+.contact-detail-left h1 {
+  margin: 0;                     /* Remove default margin */
+}
+
+.contact-detail-left p,
+.contact-detail-center p,
+.contact-detail-right p {
+  margin: 5px 0;                 /* Margin for paragraphs */
+  color: #333;                   /* Text color */
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 768px) {
+  .Contact-detail {
+    flex-direction: column;      /* Stack items vertically */
+    height: auto;                /* Adjust height based on content */
+  }
+
+  .contact-detail-contain {
+    flex-direction: column;      /* Stack child elements vertically */
+    justify-content: center;     /* Center vertically */
+  }
+
+  .contact-detail-left,
+  .contact-detail-center,
+  .contact-detail-right {
+    width: 100%;                /* Full width for each column */
+    padding: 10px 0;            /* Add padding for better spacing */
+  }
+
+  .contact-detail-left h1 {
+    font-size: 1.5rem;          /* Adjust font size for smaller screens */
+  }
+
+  .contact-detail-left p,
+  .contact-detail-center p,
+  .contact-detail-right p {
+    font-size: 1rem;            /* Reduce font size for smaller screens */
+  }
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 480px) {
+  .Contact-detail {
+    padding: 10px;               /* Reduce padding for mobile screens */
+  }
+
+  .contact-detail-left h1 {
+    font-size: 1.2rem;           /* Further reduce font size */
+  }
+
+  .contact-detail-left p,
+  .contact-detail-center p,
+  .contact-detail-right p {
+    font-size: 0.9rem;           /* Smaller font size for mobile screens */
+  }
+}

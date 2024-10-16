@@ -1,0 +1,130 @@
+/* SignUp.css */
+
+.signin {
+  display: flex;                      /* Flexbox for centering */
+  flex-direction: column;             /* Stack items vertically */
+  align-items: center;                /* Center items horizontally */
+  justify-content: center;            /* Center items vertically */
+  height: 100vh;                      /* Full height of the viewport */
+  background-color: #f7f7f7;         /* Light background color */
+  padding: 20px;                      /* Padding around the container */
+  box-sizing: border-box;             /* Include padding in total height and width */
+}
+
+h1 {
+  margin-bottom: 20px;                /* Space below the heading */
+  font-size: 2rem;                    /* Font size for heading */
+  color: #333;                        /* Dark color for text */
+}
+
+.form-contain {
+  display: flex;                      /* Flexbox for form inputs */
+  flex-direction: column;             /* Stack inputs vertically */
+  width: 100%;                        /* Full width */
+  max-width: 400px;                  /* Max width for the form */
+  background-color: white;           /* White background for form */
+  border-radius: 8px;                /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;                     /* Padding inside the form */
+}
+
+input {
+  margin-bottom: 15px;                /* Space between inputs */
+  padding: 10px;                      /* Padding inside the input */
+  border: 1px solid #ccc;            /* Light gray border */
+  border-radius: 4px;                /* Rounded corners */
+  font-size: 1rem;                   /* Font size for input */
+  outline: none;                     /* Remove default outline */
+}
+
+input:focus {
+  border-color: #007BFF;            /* Highlight border color on focus */
+}
+
+.signin-btn {
+  padding: 10px;                     /* Padding inside the button */
+  background-color: #007BFF;        /* Blue background */
+  color: white;                     /* White text */
+  border: none;                      /* No border */
+  border-radius: 4px;               /* Rounded corners */
+  font-size: 1rem;                   /* Font size for button */
+  cursor: pointer;                   /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.signin-btn:disabled {
+  background-color: #ccc;            /* Gray background when disabled */
+  cursor: not-allowed;               /* Not-allowed cursor */
+}
+
+.signin-btn:not(:disabled):hover {
+  background-color: #0056b3;        /* Darker blue on hover */
+}
+
+.sign-up {
+  margin-top: 15px;                  /* Space above the sign-up prompt */
+  text-align: center;                /* Center text */
+}
+
+.sign-up p {
+  margin: 0;                        /* Remove default margin */
+}
+
+.sign-up span {
+  color: #007BFF;                   /* Link color */
+  cursor: pointer;                  /* Pointer cursor for link */
+  text-decoration: underline;       /* Underline for link */
+}
+
+.error-message {
+  color: red;                       /* Red color for error message */
+  margin-top: 10px;                /* Space above the error message */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;               /* Adjust heading size for smaller screens */
+  }
+
+  .form-contain {
+    max-width: 90%;                 /* Allow form to take more width */
+    padding: 15px;                  /* Reduce padding for smaller screens */
+  }
+
+  input {
+    font-size: 0.9rem;              /* Slightly smaller font size for inputs */
+    padding: 8px;                   /* Reduce padding for inputs */
+  }
+
+  .signin-btn {
+    font-size: 0.9rem;              /* Smaller font size for button */
+    padding: 8px;                   /* Reduce padding for button */
+  }
+
+  .sign-up span {
+    font-size: 0.9rem;              /* Smaller font size for sign-up link */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;               /* Further reduce heading size */
+  }
+
+  .form-contain {
+    padding: 10px;                  /* Further reduce padding for smaller screens */
+  }
+
+  input {
+    font-size: 0.85rem;             /* Further reduce font size for inputs */
+  }
+
+  .signin-btn {
+    font-size: 0.85rem;             /* Further reduce font size for button */
+  }
+
+  .sign-up span {
+    font-size: 0.85rem;             /* Further reduce font size for sign-up link */
+  }
+}

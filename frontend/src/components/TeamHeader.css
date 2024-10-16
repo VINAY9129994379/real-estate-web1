@@ -1,0 +1,63 @@
+/* TeamHeader.css */
+.team-header-center {
+  background-image: url('../assets/BackgroundImg1.png'); /* Adjust the path to the correct image location */
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.team-header-p {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.team-header-h {
+  font-size: 3rem;
+  margin-top: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .team-header-h {
+      font-size: 2.5rem; /* Reduce font size for heading on smaller screens */
+  }
+
+  .team-header-p {
+      font-size: 1.2rem; /* Adjust paragraph size for smaller screens */
+      letter-spacing: 2px; /* Reduce letter spacing for better readability */
+  }
+
+  .team-header-center {
+      height: 150px; /* Reduce height for smaller screens */
+      padding: 15px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .team-header-h {
+      font-size: 2rem; /* Further reduce heading size for very small screens */
+  }
+
+  .team-header-p {
+      font-size: 1rem; /* Further reduce paragraph size */
+      letter-spacing: 1px; /* Further reduce letter spacing */
+  }
+
+  .team-header-center {
+      height: 120px; /* Further reduce height for very small screens */
+      padding: 10px; /* Further adjust padding */
+  }
+}

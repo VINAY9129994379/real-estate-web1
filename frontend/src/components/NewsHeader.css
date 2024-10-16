@@ -1,0 +1,65 @@
+/* NewsHeader.css */
+.news-header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Adjust height as needed */
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white; /* Adjust text color for visibility over the image */
+    padding: 50px 0;
+}
+
+.news-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffeb3b; /* Bright yellow color for contrast */
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.news-para {
+    font-size: 48px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 10px 0 0 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adding shadow for better readability */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .news-header-center {
+        padding: 30px 0; /* Reduce padding for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .news-heading {
+        font-size: 20px; /* Reduce font size for smaller screens */
+        letter-spacing: 1px; /* Adjust letter spacing */
+    }
+
+    .news-para {
+        font-size: 36px; /* Reduce font size for smaller screens */
+        letter-spacing: 2px; /* Adjust letter spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .news-header-center {
+        padding: 20px 0; /* Further reduce padding for very small screens */
+    }
+
+    .news-heading {
+        font-size: 18px; /* Further reduce font size */
+    }
+
+    .news-para {
+        font-size: 28px; /* Further reduce font size */
+    }
+}

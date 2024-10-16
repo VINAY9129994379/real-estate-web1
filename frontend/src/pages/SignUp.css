@@ -1,0 +1,130 @@
+/* SignUp.css */
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.signup h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-contain input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-contain input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.signup-btn {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #357ABD;
+}
+
+.sign-in {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sign-in p {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.sign-in .sign-in {
+  color: #4a90e2;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.sign-in .sign-in:hover {
+  color: #357ABD;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .signup h1 {
+      font-size: 2rem;                /* Adjust heading size for smaller screens */
+  }
+
+  .form-contain {
+      padding: 20px;                  /* Reduce padding for smaller screens */
+      max-width: 90%;                 /* Allow form to take more width */
+  }
+
+  .form-contain input {
+      font-size: 0.9rem;              /* Slightly smaller font size for inputs */
+      padding: 12px;                  /* Reduce padding for inputs */
+  }
+
+  .signup-btn {
+      font-size: 0.9rem;              /* Smaller font size for button */
+      padding: 12px;                  /* Reduce padding for button */
+  }
+
+  .sign-in p {
+      font-size: 0.9rem;              /* Smaller font size for sign-in text */
+  }
+}
+
+@media (max-width: 480px) {
+  .signup h1 {
+      font-size: 1.5rem;              /* Further reduce heading size for small screens */
+  }
+
+  .form-contain {
+      padding: 15px;                  /* Further reduce padding for smaller screens */
+  }
+
+  .form-contain input {
+      font-size: 0.85rem;             /* Further reduce font size for inputs */
+  }
+
+  .signup-btn {
+      font-size: 0.85rem;             /* Further reduce font size for button */
+  }
+
+  .sign-in p {
+      font-size: 0.85rem;             /* Further reduce font size for sign-in text */
+  }
+}

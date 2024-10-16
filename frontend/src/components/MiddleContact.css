@@ -1,0 +1,114 @@
+.middle-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.middle-product h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.middle-product-left,
+.middle-product-center,
+.middle-product-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.middle-product-left h1,
+.middle-product-center h1,
+.middle-product-right h1 {
+  font-size: 20px;
+  color: #ff5722;
+  margin: 10px 0;
+}
+
+.middle-product-left p,
+.middle-product-center p,
+.middle-product-right p {
+  font-size: 16px;
+  color: #666;
+}
+
+.middle-product-left span,
+.middle-product-center span,
+.middle-product-right span {
+  font-weight: bold;
+  color: #333;
+}
+
+.MuiSvgIcon-root {
+  font-size: 40px;
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+  .middle-product {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .middle-product-left,
+  .middle-product-center,
+  .middle-product-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+  .middle-product {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .middle-product-left,
+  .middle-product-center,
+  .middle-product-right {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .middle-product h3 {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .middle-product-left h1,
+  .middle-product-center h1,
+  .middle-product-right h1 {
+    font-size: 18px; /* Reduce heading size */
+  }
+
+  .middle-product-left p,
+  .middle-product-center p,
+  .middle-product-right p {
+    font-size: 14px; /* Reduce paragraph font size */
+  }
+
+  .MuiSvgIcon-root {
+    font-size: 30px; /* Smaller icon size for mobile */
+  }
+}

@@ -1,0 +1,55 @@
+/* Styles for the Properties dropdown container */
+.properties-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Styles for the select dropdown */
+.dropdown-contain {
+  width: 150px; /* Default width */
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Change background color on hover */
+.dropdown-contain:hover {
+  background-color: #f0f0f0;
+}
+
+/* Change border and background color when focused */
+.dropdown-contain:focus {
+  border-color: #007BFF;
+  outline: none;
+  background-color: #e6f0ff;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .dropdown-contain {
+      width: 120px; /* Adjust width for medium-sized screens */
+      font-size: 15px; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-contain {
+      width: 100px; /* Adjust width for small screens */
+      font-size: 14px; /* Further reduce font size */
+      padding: 6px; /* Reduce padding for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .dropdown-contain {
+      width: 80%; /* Take full width on very small screens */
+      font-size: 12px; /* Further reduce font size */
+      padding: 10px; /* Adjust padding for better touch targets */
+  }
+}
